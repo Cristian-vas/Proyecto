@@ -3,7 +3,8 @@
 Rutas activas del proyecto:
 | Ruta | Metodo | Observaciones |
 | ---- | ------ | ------- |
-* | '/ ' | Cualquiera | Responde con texto un saludo |
-* | '/getproducts' | GET | Responde un archivo JSON con la lista de productos |
-* | '/searchproducts' | GET | Requiere ID o nombre (enviado por los __querys/parmas__) y devuelve el producto buscado si existe |
-* | '/createUser' | post | Requiere nombre. email y contraseña (enviado por el __body__ de la peticion en formato JSON) y devuelve el estado de la creación del usuario |
+| '/ ' | Cualquiera | Responde con texto un saludo |
+| '/create/product' | POST | Responde con un formulario para ingreso de productos |
+| '/getproducts' | GET | Responde en consola un listado de los productos guardados |
+| '/products' | GET | responde con listado de los datos guardados |
+|/products/delete/:product_id | DELETE | elimina producto por ID |
